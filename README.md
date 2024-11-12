@@ -8,14 +8,14 @@ This project demonstrates the RSA algorithm by implementing both encryption and 
 ## Project Structure
 
 ### Encryption Mode
-- **plainMessage.txt**: This file stores the non-encrypted message to be encrypted.
+- **plainMessage.txt**: This file stores the non-encrypted message to be encrypted (resources folder).
 - The encryption process:
   1. **Generate** the necessary RSA values (using Java's `BigInteger` for large numbers).
   2. **Write** the private key ("d n") on the first line of `output.txt`.
   3. **Encrypt** the message, and store the result (a series of `BigInteger` values representing each character) on the second line of `output.txt`.
 
 ### Decryption Mode
-- **encryptedMessage.txt**: This file stores the encrypted message to be decrypted.
+- **encryptedMessage.txt**: This file stores the encrypted message to be decrypted (resources folder).
 - The decryption process:
   1. **Read** the private key and the encrypted message from `encryptedMessage.txt`.
   2. **Decrypt** the message using the private key.
